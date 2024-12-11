@@ -1,0 +1,13 @@
+{
+  "version":2,
+  "builds":[
+    {
+      "src":"hdpu.py", "use": "@vercel/python"
+    }
+  ],
+  "routes":[
+    {
+      "src":"/(.*)", "dest": "hdpu.py"
+    }
+  ]
+}
