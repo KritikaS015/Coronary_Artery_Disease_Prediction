@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 # Load the saved model with error handling
 try:
-    model = pickle.load(open('./training_data/model.pkl', 'rb'))
+    model = pickle.load(open('./model.pkl', 'rb'))
     print("Model loaded successfully!")
 except FileNotFoundError:
     print("Error: model.pkl file not found.")
